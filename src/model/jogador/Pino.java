@@ -1,6 +1,6 @@
 package model.jogador;
 
-import jplay.Sprite;
+import Jplay.src.jplay.Sprite;
 
 public class Pino extends Sprite{
 

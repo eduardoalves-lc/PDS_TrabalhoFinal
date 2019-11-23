@@ -1,6 +1,6 @@
 package model.dado;
 
-import jplay.Animation;
+import Jplay.src.jplay.Animation;
 
 public class Dado {
 	
