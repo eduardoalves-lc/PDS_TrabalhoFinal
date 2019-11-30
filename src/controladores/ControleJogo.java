@@ -11,6 +11,7 @@ import view.View;
 public class ControleJogo implements IJogo {
 
 	private static ControleJogo controleJogo;
+	int qtdjogador;
 	
 	public ControleJogo() {
 	}
@@ -48,6 +49,8 @@ public class ControleJogo implements IJogo {
 
 	@Override
 	public void cadastrarJogador(String pino) {
+		JOptionPane.showInputDialog("Quantos jogadores irão participar: ", qtdjogador);
+		System.out.println(qtdjogador);
 		DAOJogador.getInstance().addJogador(
 				new Jogador(JOptionPane.showInputDialog("Digite seu nome"), pino));		
 	}
@@ -55,6 +58,14 @@ public class ControleJogo implements IJogo {
 	@Override
 	public int lancarDado() {
 		return ControleDado.getInstance().lancarDados();
+	}
+
+	public int getQtdjogador() {
+		return qtdjogador;
+	}
+
+	public void setQtdjogador(int qtdjogador) {
+		this.qtdjogador = qtdjogador;
 	}
 
 	public void Mensagem(String mensagem) {
