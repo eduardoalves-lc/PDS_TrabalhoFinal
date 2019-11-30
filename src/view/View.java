@@ -2,15 +2,17 @@ package view;
 
 import javax.swing.JOptionPane;
 
+import Jplay.src.jplay.GameImage;
+import Jplay.src.jplay.Keyboard;
+import Jplay.src.jplay.Window;
 import controladores.ControleDado;
 import controladores.ControleJogador;
 import controladores.ControleJogo;
-import jplay.GameImage;
-import jplay.Keyboard;
-import jplay.Window;
 import model.dado.Dado;
 import model.jogador.Jogador;
 import model.jogador.Pino;
+
+//Teste
 
 public class View {
 	private Window janela;
