@@ -12,7 +12,7 @@ import model.dado.Dado;
 import model.jogador.Jogador;
 import model.jogador.Pino;
 
-//Teste
+//Teste Geral
 
 public class View {
 	private Window janela;
