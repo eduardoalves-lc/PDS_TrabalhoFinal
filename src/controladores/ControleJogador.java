@@ -32,6 +32,10 @@ private static ControleJogador controleJogador;
 	public Jogador proximoJogador(Jogador jogador) {
 		if (jogador == DAOJogador.getInstance().getJogadores().get(0))
 			return (Jogador) DAOJogador.getInstance().getJogadores().get(1);
+		else if (jogador == DAOJogador.getInstance().getJogadores().get(1))
+			return (Jogador) DAOJogador.getInstance().getJogadores().get(2);
+		else if (jogador == DAOJogador.getInstance().getJogadores().get(2))
+			return (Jogador) DAOJogador.getInstance().getJogadores().get(3);
 		else 
 			return (Jogador) DAOJogador.getInstance().getJogadores().get(0);
 	}
@@ -43,5 +47,10 @@ private static ControleJogador controleJogador;
 	public Jogador getJogador2(){
 		return (Jogador) DAOJogador.getInstance().getJogadores().get(1);
 	}
-	
+	public Jogador getJogador3(){
+		return (Jogador) DAOJogador.getInstance().getJogadores().get(2);
+	}
+	public Jogador getJogador4(){
+		return (Jogador) DAOJogador.getInstance().getJogadores().get(3);
+	}
 }

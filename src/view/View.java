@@ -35,6 +35,8 @@ public class View {
 			janela.update();
 			ControleJogador.getInstance().getJogador1().getPino().draw();
 			ControleJogador.getInstance().getJogador2().getPino().draw();
+			ControleJogador.getInstance().getJogador3().getPino().draw();
+			ControleJogador.getInstance().getJogador4().getPino().draw();
 			
 			updateJanela();
 			ControleJogo.getInstance().proximaRodada(jogador);

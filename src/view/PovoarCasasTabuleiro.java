@@ -24,7 +24,7 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(13, "N", new Point(615, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(14, "S", new Point(665, 475), 20));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(15, "N", new Point(713, 475)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(16, "N", new Point(760, 475)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(16, "E", new Point(760, 475), 19));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(17, "N", new Point(760, 430)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(18, "N", new Point(760, 390)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(19, "N", new Point(760, 342)));
@@ -52,7 +52,7 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(41, "N", new Point(42, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(42, "N", new Point(42, 70)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(43, "N", new Point(42, 115)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(44, "N", new Point(42, 160)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(44, "E", new Point(42, 160), 47));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(45, "N", new Point(42, 203)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(46, "N", new Point(42, 251)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(47, "S", new Point(42, 294), 80));
@@ -95,7 +95,7 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(84, "A", new Point(183, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(85, "N", new Point(231, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(86, "N", new Point(281, 293)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(87, "N", new Point(328, 293)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(87, "E", new Point(328, 293), 90));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(88, "N", new Point(378, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(89, "N", new Point(424, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(90, "N", new Point(470, 293)));

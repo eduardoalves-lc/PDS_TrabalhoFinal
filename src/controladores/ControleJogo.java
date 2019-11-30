@@ -26,8 +26,12 @@ public class ControleJogo implements IJogo {
 		DAOCasas.getInstance();
 		cadastrarJogador("src/recursos/images/pino1.png");
 		cadastrarJogador("src/recursos/images/pino2.png");
+		cadastrarJogador("src/recursos/images/pino3.png");
+		cadastrarJogador("src/recursos/images/pino4.png");
 		JOptionPane.showMessageDialog(null, ControleJogador.getInstance().getJogador1().getNome()+" - Pino Preto\n"+
-				ControleJogador.getInstance().getJogador2().getNome()+" - Pino Laranja\n");
+				ControleJogador.getInstance().getJogador2().getNome()+" - Pino Laranja\n"+
+				ControleJogador.getInstance().getJogador3().getNome()+" - Pino Verde\n"+
+				ControleJogador.getInstance().getJogador4().getNome()+" - Pino Vermelho\n");
 		new View();	
 	}
 
