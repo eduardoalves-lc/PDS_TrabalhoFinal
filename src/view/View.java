@@ -16,15 +16,18 @@ public class View {
 	private Window janela;
 	private GameImage tabuleiro;
 	private static Keyboard teclado;
-	Jogador jogador = ControleJogador.getInstance().getJogador1();
+	Jogador jogador = ControleJogador.getInstance().getJogador(0);
 	private Jogador jogadorAtual;
-
-	public View() {
+	private int qtdJogador;
+	
+	public View(int qtdJogador) {
+		this.qtdJogador = qtdJogador;
 		tabuleiro = new GameImage("src/recursos/images/tabuleiro.png");
 		this.janela = new Window(800, 528);
 		teclado = janela.getKeyboard();
-		setJogadorAtual(ControleJogador.getInstance().getJogador1());
+		setJogadorAtual(ControleJogador.getInstance().getJogador(0));
 		run();
+		
 	}
 
 	public void run() {
@@ -33,11 +36,19 @@ public class View {
 			janela.update();
 			tabuleiro.draw();
 			janela.update();
-			ControleJogador.getInstance().getJogador1().getPino().draw();
-			ControleJogador.getInstance().getJogador2().getPino().draw();
-			ControleJogador.getInstance().getJogador3().getPino().draw();
-			ControleJogador.getInstance().getJogador4().getPino().draw();
+		
+			for(int i = 0; i < qtdJogador; i++) {
+				ControleJogador.getInstance().getJogador(i).getPino().draw();
+			}
 			
+			/*
+				ControleJogador.getInstance().getJogador1().getPino().draw();
+				ControleJogador.getInstance().getJogador2().getPino().draw();
+				ControleJogador.getInstance().getJogador3().getPino().draw();
+				ControleJogador.getInstance().getJogador4().getPino().draw();
+			*/
+			
+
 			updateJanela();
 			ControleJogo.getInstance().proximaRodada(jogador);
 			
@@ -47,7 +58,7 @@ public class View {
 			jogador.getCasaAtual().acao(jogador);
 			updateJanela();
 			
-			jogador = ControleJogador.getInstance().proximoJogador(jogador);
+			jogador = ControleJogador.getInstance().proximoJogador(jogador, qtdJogador);
 			updateJanela();
 		}
 	}
@@ -89,5 +100,9 @@ public class View {
 
 	public void setJogadorAtual(Jogador jogadorAtual) {
 		this.jogadorAtual = jogadorAtual;
+	}
+
+	public void setQtdJogador(int qtdJogador) {
+		this.qtdJogador = qtdJogador;
 	}
 }
