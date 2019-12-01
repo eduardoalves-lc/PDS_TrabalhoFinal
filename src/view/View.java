@@ -1,7 +1,6 @@
 package view;
 
 import javax.swing.JOptionPane;
-
 import Jplay.src.jplay.GameImage;
 import Jplay.src.jplay.Keyboard;
 import Jplay.src.jplay.Window;
