@@ -2,7 +2,7 @@ package fabrica;
 
 import interfaces.IFabricaCarta;
 import model.cartas.Carta;
-import model.cartas.CartaAzar;
+import model.cartas.CartaEspecial;
 import model.cartas.CartaSorte;
 
 public class FabricaCartasTabuleiro implements IFabricaCarta{
@@ -15,7 +15,7 @@ public class FabricaCartasTabuleiro implements IFabricaCarta{
 		if (tipo.equals("S")) {
 			carta = new CartaSorte(valor, descricao);
 		} else if (tipo.equals("A")) {
-			carta = new CartaAzar(valor, descricao);
+			carta = new CartaEspecial(valor, descricao);
 		}
 		return carta;
 	}	

@@ -1,7 +1,6 @@
 package controladores;
 
 import java.util.ArrayList;
-
 import dao.DAOCasas;
 import model.casa.CasaTabuleiro;
 

@@ -28,4 +28,5 @@ public class Dado {
 	public int getFace(){
 		return face;
 	}
+	
 }

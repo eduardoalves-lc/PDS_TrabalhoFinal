@@ -1,7 +1,6 @@
 package model.casa;
 
 import java.awt.Point;
-
 import controladores.ControleCasas;
 import controladores.ControleJogo;
 import model.jogador.Jogador;

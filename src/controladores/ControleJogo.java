@@ -1,7 +1,6 @@
 package controladores;
 
 import javax.swing.JOptionPane;
-
 import dao.DAOCasas;
 import dao.DAOJogador;
 import interfaces.IJogo;
@@ -9,7 +8,6 @@ import model.jogador.Jogador;
 import view.View;
 
 public class ControleJogo implements IJogo {
-	View view;
 	private static ControleJogo controleJogo;
 	private int qtdJogador;
 
@@ -45,29 +43,25 @@ public class ControleJogo implements IJogo {
 		ControleJogador.getInstance().moverJogador(jogador, dados);
 	}
 
-	/*
-	 * Buscar nova forma de mostrar os usuários e seus pinos sem usar switch ou
-	 * if/else
-	 */
 	public void mostrarJogadores() {
 
 		switch (qtdJogador) {
 		case 2:
 			JOptionPane.showMessageDialog(null, ControleJogador.getInstance().getJogador(0).getNome()
-					+ " - Pino Preto\n" + ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Laranja\n");
+					+ " - Pino Preto\n" + ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Vermelho\n");
 			break;
 		case 3:
 			JOptionPane.showMessageDialog(null,
 					ControleJogador.getInstance().getJogador(0).getNome() + " - Pino Preto\n"
-							+ ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Laranja\n"
+							+ ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Vermelho\n"
 							+ ControleJogador.getInstance().getJogador(2).getNome() + " - Pino Verde\n");
 			break;
 		case 4:
 			JOptionPane.showMessageDialog(null,
 					ControleJogador.getInstance().getJogador(0).getNome() + " - Pino Preto\n"
-							+ ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Laranja\n"
+							+ ControleJogador.getInstance().getJogador(1).getNome() + " - Pino Vermelho\n"
 							+ ControleJogador.getInstance().getJogador(2).getNome() + " - Pino Verde\n"
-							+ ControleJogador.getInstance().getJogador(3).getNome() + " - Pino Vermelho\n");
+							+ ControleJogador.getInstance().getJogador(3).getNome() + " - Pino Azul\n");
 			break;
 		default:
 			JOptionPane.showMessageDialog(null, "Número inválido!");
@@ -85,15 +79,8 @@ public class ControleJogo implements IJogo {
 		return ControleDado.getInstance().lancarDados();
 	}
 
-	public int getQtdJogador() {
-		return qtdJogador;
-	}
-
-	public void setQtdJogador(int qtdJogador) {
-		this.qtdJogador = qtdJogador;
-	}
-
 	public void Mensagem(String mensagem) {
 		JOptionPane.showMessageDialog(null, mensagem);
 	}
+	
 }

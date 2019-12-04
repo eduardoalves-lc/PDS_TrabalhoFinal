@@ -1,9 +1,7 @@
 package fabrica;
 
 import java.awt.Point;
-
 import interfaces.IFabricaCasa;
-import model.casa.CasaArmadilha;
 import model.casa.CasaEspecial;
 import model.casa.CasaFinal;
 import model.casa.CasaMussum;
@@ -22,9 +20,7 @@ public class FabricaCasaTabuleiro implements IFabricaCasa<CasaTabuleiro> {
 			casa = new CasaSubida(i, p, valor);
 		} else if(tipo.equals("M")) {
 			casa = new CasaMussum(i, p, valor);
-		} else if(tipo.equals("E")) {
-				casa = new CasaEspecial(i, p, valor);
-		}
+		} 
 		return casa;
 	}
 
@@ -34,8 +30,8 @@ public class FabricaCasaTabuleiro implements IFabricaCasa<CasaTabuleiro> {
 			casa = new CasaNormal(i, p);
 		} else if(tipo.equals("F")) {
 			casa = new CasaFinal(i, p);
-		} else if(tipo.equals("A")){
-			casa = new CasaArmadilha(i, p);
+		} else if(tipo.equals("E")){
+			casa = new CasaEspecial(i, p);
 		}
 		return casa;
 	}

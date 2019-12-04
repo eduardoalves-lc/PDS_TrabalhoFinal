@@ -1,7 +1,5 @@
 package view;
 
-//commit 01122019
-//01
 import javax.swing.JOptionPane;
 import Jplay.src.jplay.GameImage;
 import Jplay.src.jplay.Keyboard;
@@ -27,8 +25,7 @@ public class View {
 		this.janela = new Window(800, 528);
 		teclado = janela.getKeyboard();
 		setJogadorAtual(ControleJogador.getInstance().getJogador(0));
-		run();
-		
+		run();	
 	}
 
 	public void run() {
@@ -41,18 +38,10 @@ public class View {
 			for(int i = 0; i < qtdJogador; i++) {
 				ControleJogador.getInstance().getJogador(i).getPino().draw();
 			}
-			
-			/*
-				ControleJogador.getInstance().getJogador1().getPino().draw();
-				ControleJogador.getInstance().getJogador2().getPino().draw();
-				ControleJogador.getInstance().getJogador3().getPino().draw();
-				ControleJogador.getInstance().getJogador4().getPino().draw();
-			*/
-			
 
 			updateJanela();
 			ControleJogo.getInstance().proximaRodada(jogador);
-			
+	
 			desenhaDado();
 			updateJanela();
 			
@@ -102,8 +91,5 @@ public class View {
 	public void setJogadorAtual(Jogador jogadorAtual) {
 		this.jogadorAtual = jogadorAtual;
 	}
-
-	public void setQtdJogador(int qtdJogador) {
-		this.qtdJogador = qtdJogador;
-	}
+	
 }

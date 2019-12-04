@@ -1,22 +1,18 @@
 package model.casa;
 
 import java.awt.Point;
-
-import controladores.ControleCasas;
-import controladores.ControleJogo;
+import controladores.ControleCartas;
 import model.jogador.Jogador;
 
-public class CasaEspecial extends CasaComEfeito{
-
-
-	public CasaEspecial(int indice, Point coordenada, int destino) {
-		super(indice, coordenada, destino);
+public class CasaEspecial extends CasaTabuleiro {	
+	
+	public CasaEspecial(int indice, Point coordenada) {
+		super(indice, coordenada);
 	}
 
 	@Override
 	public void acao(Jogador jogador) {
-		jogador.setCasaAtual(ControleCasas.getInstance().getCasas().get(this.getDestino()));
-		ControleJogo.getInstance().Mensagem("casa da sorte!! Avance 3 casas");
+		ControleCartas.getInstance().proximaCarta().acao(jogador);
 	}
 
 }

@@ -1,7 +1,6 @@
 package controladores;
 
 import java.util.Random;
-
 import dao.DAOCartas;
 import interfaces.IEfeito;
 import interfaces.IteratorCartas;

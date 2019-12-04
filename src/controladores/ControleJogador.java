@@ -27,7 +27,6 @@ public class ControleJogador implements IteratorJogador {
 			jogador.setCasaAtual(ControleCasas.getInstance().getCasas().get(99));
 		} else
 			jogador.setCasaAtual(ControleCasas.getInstance().getCasas().get(destino));
-
 	}
 
 	public Jogador proximoJogador(Jogador jogador, int qtdJogadores) {
@@ -56,7 +55,6 @@ public class ControleJogador implements IteratorJogador {
 				return (Jogador) DAOJogador.getInstance().getJogadores().get(3);
 			else
 				return (Jogador) DAOJogador.getInstance().getJogadores().get(0);
-
 		}
 		return null;
 	}

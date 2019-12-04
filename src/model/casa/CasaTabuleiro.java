@@ -1,7 +1,6 @@
 package model.casa;
 
 import java.awt.Point;
-
 import interfaces.IEfeito;
 
 public abstract class CasaTabuleiro implements IEfeito{
@@ -21,6 +20,5 @@ public abstract class CasaTabuleiro implements IEfeito{
 	public Point getCoordenada() {
 		return coordenada;
 	}
-
 	
 }

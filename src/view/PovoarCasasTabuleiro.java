@@ -1,7 +1,6 @@
 package view;
 
 import java.awt.Point;
-
 import controladores.ControleCasas;
 import fabrica.FabricaCasaTabuleiro;
 
@@ -9,14 +8,15 @@ public class PovoarCasasTabuleiro {
 
 		public PovoarCasasTabuleiro() {
 			FabricaCasaTabuleiro fabricaCasas = new FabricaCasaTabuleiro();
+			
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(1, "N", new Point(41, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(2, "N", new Point(88, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(3, "S", new Point(139, 475), 52));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(4, "N", new Point(186, 475)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(5, "N", new Point(235, 475)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(5, "E", new Point(235, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(6, "N", new Point(279, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(7, "N", new Point(327, 475)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(8, "A", new Point(379, 475)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(8, "E", new Point(379, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(9, "N", new Point(426, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(10, "N", new Point(472, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(11, "N", new Point(521, 475)));
@@ -24,7 +24,7 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(13, "N", new Point(615, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(14, "S", new Point(665, 475), 20));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(15, "N", new Point(713, 475)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(16, "E", new Point(760, 475), 19));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(16, "N", new Point(760, 475)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(17, "N", new Point(760, 430)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(18, "N", new Point(760, 390)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(19, "N", new Point(760, 342)));
@@ -40,40 +40,40 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(29, "N", new Point(615, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(30, "N", new Point(568, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(31, "N", new Point(520, 24)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(32, "A", new Point(472, 24)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(33, "A", new Point(425, 24)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(34, "N", new Point(377, 24)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(32, "N", new Point(472, 24)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(33, "E", new Point(425, 24)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(34, "E", new Point(377, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(35, "N", new Point(327, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(36, "N", new Point(280, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(37, "N", new Point(231, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(38, "N", new Point(183, 24)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(39, "A", new Point(137, 24)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(39, "N", new Point(137, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(40, "N", new Point(89, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(41, "N", new Point(42, 24)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(42, "N", new Point(42, 70)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(43, "N", new Point(42, 115)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(44, "E", new Point(42, 160), 47));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(44, "N", new Point(42, 160)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(45, "N", new Point(42, 203)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(46, "N", new Point(42, 251)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(47, "S", new Point(42, 294), 80));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(48, "N", new Point(42, 342)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(49, "N", new Point(42, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(50, "N", new Point(89, 386)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(51, "N", new Point(137, 386)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(51, "E", new Point(137, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(52, "N", new Point(183, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(53, "N", new Point(232, 386)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(54, "A", new Point(278, 386)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(54, "N", new Point(278, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(55, "M", new Point(328, 386), 7));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(56, "S", new Point(375, 386), 89));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(57, "N", new Point(424, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(58, "N", new Point(473, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(59, "N", new Point(520, 386)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(60, "N", new Point(566, 386)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(60, "E", new Point(566, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(61, "N", new Point(615, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(62, "N", new Point(662, 386)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(63, "N", new Point(662, 342)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(64, "N", new Point(662, 295)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(65, "A", new Point(662, 251)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(65, "N", new Point(662, 251)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(66, "N", new Point(662, 207)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(67, "M", new Point(662, 162), 21));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(68, "N", new Point(662, 115)));
@@ -92,10 +92,10 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(81, "N", new Point(136, 207)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(82, "N", new Point(136, 251)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(83, "M", new Point(136, 293), 50));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(84, "A", new Point(183, 293)));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(84, "N", new Point(183, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(85, "N", new Point(231, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(86, "N", new Point(281, 293)));
-			ControleCasas.getInstance().addCasa(fabricaCasas.criar(87, "E", new Point(328, 293), 90));
+			ControleCasas.getInstance().addCasa(fabricaCasas.criar(87, "E", new Point(328, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(88, "N", new Point(378, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(89, "N", new Point(424, 293)));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(90, "N", new Point(470, 293)));
@@ -110,5 +110,5 @@ public class PovoarCasasTabuleiro {
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(99, "M", new Point(329, 205), 86));
 			ControleCasas.getInstance().addCasa(fabricaCasas.criar(100, "F", new Point(280, 209)));		
 		}
-
+		
 }

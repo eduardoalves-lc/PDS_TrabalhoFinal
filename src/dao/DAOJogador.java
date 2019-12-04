@@ -1,7 +1,6 @@
 package dao;
 
 import java.util.ArrayList;
-
 import model.jogador.Jogador;
 
 public class DAOJogador {
